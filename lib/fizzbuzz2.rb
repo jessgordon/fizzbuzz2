@@ -1,9 +1,4 @@
 def fizzbuzz(n)
-  answer = ('fizz' if n % 3 == 0) + ('buzz' if n % 5 == 0)
-  answer = n if answer.empty?
-  answer
+  answer = ('fizz' if n % 3 == 0).to_s + ('buzz' if n % 5 == 0).to_s
+  answer.empty? ? n : answer
 end
-
-#def fizzbuzz(n)
-#  [('Fizz' if x % 3 == 0), ('Buzz' if x % 5 == 0)].compact.inject(:+) || x
-#end
