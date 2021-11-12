@@ -1,5 +1,5 @@
 def fizzbuzz(n)
-  answer = (n % 3 == 0 ? 'fizz' : '') + (n % 5 == 0 ? 'buzz' : '')
+  answer = ('fizz' if n % 3 == 0) + ('buzz' if n % 5 == 0)
   answer = n if answer.empty?
   answer
 end
